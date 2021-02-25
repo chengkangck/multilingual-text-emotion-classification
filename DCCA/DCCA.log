@@ -1,0 +1,386 @@
+[ INFO : 2020-10-26 14:37:02,904 ] - DataParallel(
+  (module): DeepCCA(
+    (model1): MlpNet(
+      (layers): ModuleList(
+        (0): Sequential(
+          (0): Linear(in_features=400, out_features=1024, bias=True)
+          (1): Sigmoid()
+          (2): BatchNorm1d(1024, eps=1e-05, momentum=0.1, affine=False, track_running_stats=True)
+        )
+        (1): Sequential(
+          (0): Linear(in_features=1024, out_features=1024, bias=True)
+          (1): Sigmoid()
+          (2): BatchNorm1d(1024, eps=1e-05, momentum=0.1, affine=False, track_running_stats=True)
+        )
+        (2): Sequential(
+          (0): Linear(in_features=1024, out_features=1024, bias=True)
+          (1): Sigmoid()
+          (2): BatchNorm1d(1024, eps=1e-05, momentum=0.1, affine=False, track_running_stats=True)
+        )
+        (3): Sequential(
+          (0): BatchNorm1d(1024, eps=1e-05, momentum=0.1, affine=False, track_running_stats=True)
+          (1): Linear(in_features=1024, out_features=100, bias=True)
+        )
+      )
+    )
+    (model2): MlpNet(
+      (layers): ModuleList(
+        (0): Sequential(
+          (0): Linear(in_features=400, out_features=1024, bias=True)
+          (1): Sigmoid()
+          (2): BatchNorm1d(1024, eps=1e-05, momentum=0.1, affine=False, track_running_stats=True)
+        )
+        (1): Sequential(
+          (0): Linear(in_features=1024, out_features=1024, bias=True)
+          (1): Sigmoid()
+          (2): BatchNorm1d(1024, eps=1e-05, momentum=0.1, affine=False, track_running_stats=True)
+        )
+        (2): Sequential(
+          (0): Linear(in_features=1024, out_features=1024, bias=True)
+          (1): Sigmoid()
+          (2): BatchNorm1d(1024, eps=1e-05, momentum=0.1, affine=False, track_running_stats=True)
+        )
+        (3): Sequential(
+          (0): BatchNorm1d(1024, eps=1e-05, momentum=0.1, affine=False, track_running_stats=True)
+          (1): Linear(in_features=1024, out_features=100, bias=True)
+        )
+      )
+    )
+  )
+)
+[ INFO : 2020-10-26 14:37:02,905 ] - RMSprop (
+Parameter Group 0
+    alpha: 0.99
+    centered: False
+    eps: 1e-08
+    lr: 0.001
+    momentum: 0
+    weight_decay: 1e-05
+)
+[ INFO : 2020-10-26 14:39:02,203 ] - Epoch 1: val_loss improved from 0.0000 to -77.5240, saving model to checkpoint.model
+[ INFO : 2020-10-26 14:39:02,328 ] - Epoch 1/1 - time: 100.37 - training_loss: -88.2940 - val_loss: -77.5240
+[ INFO : 2020-10-26 14:39:41,370 ] - loss on validation data: -77.5240
+[ INFO : 2020-10-26 14:39:59,186 ] - loss on test data: -77.5240
+[ INFO : 2020-10-28 04:51:22,588 ] - DataParallel(
+  (module): DeepCCA(
+    (model1): MlpNet(
+      (layers): ModuleList(
+        (0): Sequential(
+          (0): Linear(in_features=400, out_features=1024, bias=True)
+          (1): Sigmoid()
+          (2): BatchNorm1d(1024, eps=1e-05, momentum=0.1, affine=False, track_running_stats=True)
+        )
+        (1): Sequential(
+          (0): Linear(in_features=1024, out_features=1024, bias=True)
+          (1): Sigmoid()
+          (2): BatchNorm1d(1024, eps=1e-05, momentum=0.1, affine=False, track_running_stats=True)
+        )
+        (2): Sequential(
+          (0): Linear(in_features=1024, out_features=1024, bias=True)
+          (1): Sigmoid()
+          (2): BatchNorm1d(1024, eps=1e-05, momentum=0.1, affine=False, track_running_stats=True)
+        )
+        (3): Sequential(
+          (0): BatchNorm1d(1024, eps=1e-05, momentum=0.1, affine=False, track_running_stats=True)
+          (1): Linear(in_features=1024, out_features=100, bias=True)
+        )
+      )
+    )
+    (model2): MlpNet(
+      (layers): ModuleList(
+        (0): Sequential(
+          (0): Linear(in_features=400, out_features=1024, bias=True)
+          (1): Sigmoid()
+          (2): BatchNorm1d(1024, eps=1e-05, momentum=0.1, affine=False, track_running_stats=True)
+        )
+        (1): Sequential(
+          (0): Linear(in_features=1024, out_features=1024, bias=True)
+          (1): Sigmoid()
+          (2): BatchNorm1d(1024, eps=1e-05, momentum=0.1, affine=False, track_running_stats=True)
+        )
+        (2): Sequential(
+          (0): Linear(in_features=1024, out_features=1024, bias=True)
+          (1): Sigmoid()
+          (2): BatchNorm1d(1024, eps=1e-05, momentum=0.1, affine=False, track_running_stats=True)
+        )
+        (3): Sequential(
+          (0): BatchNorm1d(1024, eps=1e-05, momentum=0.1, affine=False, track_running_stats=True)
+          (1): Linear(in_features=1024, out_features=100, bias=True)
+        )
+      )
+    )
+  )
+)
+[ INFO : 2020-10-28 04:51:22,590 ] - RMSprop (
+Parameter Group 0
+    alpha: 0.99
+    centered: False
+    eps: 1e-08
+    lr: 0.001
+    momentum: 0
+    weight_decay: 1e-05
+)
+[ INFO : 2020-10-28 04:52:40,131 ] - Epoch 1: val_loss improved from 0.0000 to -76.6013, saving model to checkpoint.model
+[ INFO : 2020-10-28 04:52:40,226 ] - Epoch 1/1 - time: 63.24 - training_loss: -88.8505 - val_loss: -76.6013
+[ INFO : 2020-10-28 04:53:02,153 ] - loss on validation data: -76.6013
+[ INFO : 2020-10-28 04:53:12,996 ] - loss on test data: -76.6013
+[ INFO : 2020-11-12 23:51:57,551 ] - DataParallel(
+  (module): DeepCCA(
+    (model1): MlpNet(
+      (layers): ModuleList(
+        (0): Sequential(
+          (0): Linear(in_features=400, out_features=1024, bias=True)
+          (1): Sigmoid()
+          (2): BatchNorm1d(1024, eps=1e-05, momentum=0.1, affine=False, track_running_stats=True)
+        )
+        (1): Sequential(
+          (0): Linear(in_features=1024, out_features=1024, bias=True)
+          (1): Sigmoid()
+          (2): BatchNorm1d(1024, eps=1e-05, momentum=0.1, affine=False, track_running_stats=True)
+        )
+        (2): Sequential(
+          (0): Linear(in_features=1024, out_features=1024, bias=True)
+          (1): Sigmoid()
+          (2): BatchNorm1d(1024, eps=1e-05, momentum=0.1, affine=False, track_running_stats=True)
+        )
+        (3): Sequential(
+          (0): BatchNorm1d(1024, eps=1e-05, momentum=0.1, affine=False, track_running_stats=True)
+          (1): Linear(in_features=1024, out_features=100, bias=True)
+        )
+      )
+    )
+    (model2): MlpNet(
+      (layers): ModuleList(
+        (0): Sequential(
+          (0): Linear(in_features=400, out_features=1024, bias=True)
+          (1): Sigmoid()
+          (2): BatchNorm1d(1024, eps=1e-05, momentum=0.1, affine=False, track_running_stats=True)
+        )
+        (1): Sequential(
+          (0): Linear(in_features=1024, out_features=1024, bias=True)
+          (1): Sigmoid()
+          (2): BatchNorm1d(1024, eps=1e-05, momentum=0.1, affine=False, track_running_stats=True)
+        )
+        (2): Sequential(
+          (0): Linear(in_features=1024, out_features=1024, bias=True)
+          (1): Sigmoid()
+          (2): BatchNorm1d(1024, eps=1e-05, momentum=0.1, affine=False, track_running_stats=True)
+        )
+        (3): Sequential(
+          (0): BatchNorm1d(1024, eps=1e-05, momentum=0.1, affine=False, track_running_stats=True)
+          (1): Linear(in_features=1024, out_features=100, bias=True)
+        )
+      )
+    )
+  )
+)
+[ INFO : 2020-11-12 23:51:57,554 ] - RMSprop (
+Parameter Group 0
+    alpha: 0.99
+    centered: False
+    eps: 1e-08
+    lr: 0.001
+    momentum: 0
+    weight_decay: 1e-05
+)
+[ INFO : 2020-11-12 23:53:39,166 ] - Epoch 1: val_loss improved from 0.0000 to -77.5928, saving model to checkpoint.model
+[ INFO : 2020-11-12 23:53:39,272 ] - Epoch 1/1 - time: 77.63 - training_loss: -88.4868 - val_loss: -77.5928
+[ INFO : 2020-11-12 23:54:09,435 ] - loss on validation data: -77.5928
+[ INFO : 2020-11-12 23:54:24,302 ] - loss on test data: -77.5928
+[ INFO : 2021-01-21 21:20:34,694 ] - DataParallel(
+  (module): DeepCCA(
+    (model1): MlpNet(
+      (layers): ModuleList(
+        (0): Sequential(
+          (0): Linear(in_features=400, out_features=1024, bias=True)
+          (1): Sigmoid()
+          (2): BatchNorm1d(1024, eps=1e-05, momentum=0.1, affine=False, track_running_stats=True)
+        )
+        (1): Sequential(
+          (0): Linear(in_features=1024, out_features=1024, bias=True)
+          (1): Sigmoid()
+          (2): BatchNorm1d(1024, eps=1e-05, momentum=0.1, affine=False, track_running_stats=True)
+        )
+        (2): Sequential(
+          (0): Linear(in_features=1024, out_features=1024, bias=True)
+          (1): Sigmoid()
+          (2): BatchNorm1d(1024, eps=1e-05, momentum=0.1, affine=False, track_running_stats=True)
+        )
+        (3): Sequential(
+          (0): BatchNorm1d(1024, eps=1e-05, momentum=0.1, affine=False, track_running_stats=True)
+          (1): Linear(in_features=1024, out_features=100, bias=True)
+        )
+      )
+    )
+    (model2): MlpNet(
+      (layers): ModuleList(
+        (0): Sequential(
+          (0): Linear(in_features=400, out_features=1024, bias=True)
+          (1): Sigmoid()
+          (2): BatchNorm1d(1024, eps=1e-05, momentum=0.1, affine=False, track_running_stats=True)
+        )
+        (1): Sequential(
+          (0): Linear(in_features=1024, out_features=1024, bias=True)
+          (1): Sigmoid()
+          (2): BatchNorm1d(1024, eps=1e-05, momentum=0.1, affine=False, track_running_stats=True)
+        )
+        (2): Sequential(
+          (0): Linear(in_features=1024, out_features=1024, bias=True)
+          (1): Sigmoid()
+          (2): BatchNorm1d(1024, eps=1e-05, momentum=0.1, affine=False, track_running_stats=True)
+        )
+        (3): Sequential(
+          (0): BatchNorm1d(1024, eps=1e-05, momentum=0.1, affine=False, track_running_stats=True)
+          (1): Linear(in_features=1024, out_features=100, bias=True)
+        )
+      )
+    )
+  )
+)
+[ INFO : 2021-01-21 21:20:34,696 ] - RMSprop (
+Parameter Group 0
+    alpha: 0.99
+    centered: False
+    eps: 1e-08
+    lr: 0.001
+    momentum: 0
+    weight_decay: 1e-05
+)
+[ INFO : 2021-01-21 21:22:05,617 ] - Epoch 1: val_loss improved from 0.0000 to -76.7535, saving model to checkpoint.model
+[ INFO : 2021-01-21 21:22:05,717 ] - Epoch 1/1 - time: 73.32 - training_loss: -88.8708 - val_loss: -76.7535
+[ INFO : 2021-01-21 21:22:34,960 ] - loss on validation data: -76.7535
+[ INFO : 2021-01-21 21:22:48,725 ] - loss on test data: -76.7535
+[ INFO : 2021-01-21 21:46:31,267 ] - DataParallel(
+  (module): DeepCCA(
+    (model1): MlpNet(
+      (layers): ModuleList(
+        (0): Sequential(
+          (0): Linear(in_features=400, out_features=1024, bias=True)
+          (1): Sigmoid()
+          (2): BatchNorm1d(1024, eps=1e-05, momentum=0.1, affine=False, track_running_stats=True)
+        )
+        (1): Sequential(
+          (0): Linear(in_features=1024, out_features=1024, bias=True)
+          (1): Sigmoid()
+          (2): BatchNorm1d(1024, eps=1e-05, momentum=0.1, affine=False, track_running_stats=True)
+        )
+        (2): Sequential(
+          (0): Linear(in_features=1024, out_features=1024, bias=True)
+          (1): Sigmoid()
+          (2): BatchNorm1d(1024, eps=1e-05, momentum=0.1, affine=False, track_running_stats=True)
+        )
+        (3): Sequential(
+          (0): BatchNorm1d(1024, eps=1e-05, momentum=0.1, affine=False, track_running_stats=True)
+          (1): Linear(in_features=1024, out_features=100, bias=True)
+        )
+      )
+    )
+    (model2): MlpNet(
+      (layers): ModuleList(
+        (0): Sequential(
+          (0): Linear(in_features=400, out_features=1024, bias=True)
+          (1): Sigmoid()
+          (2): BatchNorm1d(1024, eps=1e-05, momentum=0.1, affine=False, track_running_stats=True)
+        )
+        (1): Sequential(
+          (0): Linear(in_features=1024, out_features=1024, bias=True)
+          (1): Sigmoid()
+          (2): BatchNorm1d(1024, eps=1e-05, momentum=0.1, affine=False, track_running_stats=True)
+        )
+        (2): Sequential(
+          (0): Linear(in_features=1024, out_features=1024, bias=True)
+          (1): Sigmoid()
+          (2): BatchNorm1d(1024, eps=1e-05, momentum=0.1, affine=False, track_running_stats=True)
+        )
+        (3): Sequential(
+          (0): BatchNorm1d(1024, eps=1e-05, momentum=0.1, affine=False, track_running_stats=True)
+          (1): Linear(in_features=1024, out_features=100, bias=True)
+        )
+      )
+    )
+  )
+)
+[ INFO : 2021-01-21 21:46:31,268 ] - RMSprop (
+Parameter Group 0
+    alpha: 0.99
+    centered: False
+    eps: 1e-08
+    lr: 0.001
+    momentum: 0
+    weight_decay: 1e-05
+)
+[ INFO : 2021-01-21 21:48:27,043 ] - Epoch 1: val_loss improved from 0.0000 to -78.5965, saving model to checkpoint.model
+[ INFO : 2021-01-21 21:48:27,158 ] - Epoch 1/3 - time: 97.34 - training_loss: -87.9518 - val_loss: -78.5965
+[ INFO : 2021-01-21 21:49:55,200 ] - Epoch 2: val_loss improved from -78.5965 to -98.1552, saving model to checkpoint.model
+[ INFO : 2021-01-21 21:49:55,304 ] - Epoch 2/3 - time: 88.14 - training_loss: -93.0799 - val_loss: -98.1552
+[ INFO : 2021-01-21 21:51:24,421 ] - Epoch 3: val_loss did not improve from -98.1552
+[ INFO : 2021-01-21 21:51:24,421 ] - Epoch 3/3 - time: 89.12 - training_loss: -94.7924 - val_loss: -98.1254
+[ INFO : 2021-01-21 21:52:06,427 ] - loss on validation data: -98.1552
+[ INFO : 2021-01-21 21:52:26,896 ] - loss on test data: -98.1552
+[ INFO : 2021-01-21 22:38:30,120 ] - DataParallel(
+  (module): DeepCCA(
+    (model1): MlpNet(
+      (layers): ModuleList(
+        (0): Sequential(
+          (0): Linear(in_features=400, out_features=1024, bias=True)
+          (1): Sigmoid()
+          (2): BatchNorm1d(1024, eps=1e-05, momentum=0.1, affine=False, track_running_stats=True)
+        )
+        (1): Sequential(
+          (0): Linear(in_features=1024, out_features=1024, bias=True)
+          (1): Sigmoid()
+          (2): BatchNorm1d(1024, eps=1e-05, momentum=0.1, affine=False, track_running_stats=True)
+        )
+        (2): Sequential(
+          (0): Linear(in_features=1024, out_features=1024, bias=True)
+          (1): Sigmoid()
+          (2): BatchNorm1d(1024, eps=1e-05, momentum=0.1, affine=False, track_running_stats=True)
+        )
+        (3): Sequential(
+          (0): BatchNorm1d(1024, eps=1e-05, momentum=0.1, affine=False, track_running_stats=True)
+          (1): Linear(in_features=1024, out_features=100, bias=True)
+        )
+      )
+    )
+    (model2): MlpNet(
+      (layers): ModuleList(
+        (0): Sequential(
+          (0): Linear(in_features=400, out_features=1024, bias=True)
+          (1): Sigmoid()
+          (2): BatchNorm1d(1024, eps=1e-05, momentum=0.1, affine=False, track_running_stats=True)
+        )
+        (1): Sequential(
+          (0): Linear(in_features=1024, out_features=1024, bias=True)
+          (1): Sigmoid()
+          (2): BatchNorm1d(1024, eps=1e-05, momentum=0.1, affine=False, track_running_stats=True)
+        )
+        (2): Sequential(
+          (0): Linear(in_features=1024, out_features=1024, bias=True)
+          (1): Sigmoid()
+          (2): BatchNorm1d(1024, eps=1e-05, momentum=0.1, affine=False, track_running_stats=True)
+        )
+        (3): Sequential(
+          (0): BatchNorm1d(1024, eps=1e-05, momentum=0.1, affine=False, track_running_stats=True)
+          (1): Linear(in_features=1024, out_features=100, bias=True)
+        )
+      )
+    )
+  )
+)
+[ INFO : 2021-01-21 22:38:30,121 ] - RMSprop (
+Parameter Group 0
+    alpha: 0.99
+    centered: False
+    eps: 1e-08
+    lr: 0.001
+    momentum: 0
+    weight_decay: 1e-05
+)
+[ INFO : 2021-01-21 22:40:05,334 ] - Epoch 1: val_loss improved from 0.0000 to -78.7937, saving model to checkpoint.model
+[ INFO : 2021-01-21 22:40:05,426 ] - Epoch 1/3 - time: 75.89 - training_loss: -88.1348 - val_loss: -78.7937
+[ INFO : 2021-01-21 22:41:32,084 ] - Epoch 2: val_loss improved from -78.7937 to -97.7783, saving model to checkpoint.model
+[ INFO : 2021-01-21 22:41:32,173 ] - Epoch 2/3 - time: 86.75 - training_loss: -93.2800 - val_loss: -97.7783
+[ INFO : 2021-01-21 22:42:57,252 ] - Epoch 3: val_loss did not improve from -97.7783
+[ INFO : 2021-01-21 22:42:57,252 ] - Epoch 3/3 - time: 85.08 - training_loss: -94.9350 - val_loss: -97.4918
+[ INFO : 2021-01-21 22:43:28,274 ] - loss on validation data: -97.7783
+[ INFO : 2021-01-21 22:43:43,201 ] - loss on test data: -97.7783
